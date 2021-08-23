@@ -13,7 +13,7 @@ pool:
   vmImage: 'ubuntu-latest'
 steps:
 - script: |
-   git remote add github https://KonohaDerek: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@github.com/KonohaDerek/AzureGithubAsync.git
+   git remote add github https://KonohaDerek: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@github.com/KonohaDerek/AzureGithubAsync.git
    git checkout -b $(branch)
    git push -u github $(branch)
   displayName: 'Command Line Script'
