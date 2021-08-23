@@ -15,6 +15,4 @@ steps:
    git remote add github https://KonohaDerek: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@github.com/Brian-Ding/ant-design-blazor.git
    git checkout -b $(branch)
    git push -u github $(branch)
-
-
   displayName: 'Command Line Script'
