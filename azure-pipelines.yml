@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+trigger:
+- master
+pool:
+  vmImage: 'ubuntu-latest'
+steps:
+- script: |
+   git remote add github https://KonohaDerek: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@github.com/Brian-Ding/ant-design-blazor.git
+   git checkout -b $(branch)
+   git push -u github $(branch)
+
+
+  displayName: 'Command Line Script'
