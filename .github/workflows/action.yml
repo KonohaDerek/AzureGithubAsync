@@ -16,7 +16,7 @@ jobs:
 
     - name: sync to azure
       run: |
-        git remote add azure  https://DerekProject:w4hewtjcrrwnslpqgl46dl2uhcr2ycpoaif4ruirrcusdtchhooa@dev.azure.com/DerekProject/AzureGithubAsync/_git/AzureGithubAsync
+        git remote add azure  https:/<PAT>@dev.azure.com/DerekProject/AzureGithubAsync/_git/AzureGithubAsync
         git branch -D main
         git checkout -b main
         git push -u azure main --force
